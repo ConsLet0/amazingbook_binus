@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------HEADER SECTION--------------------------*/
+
+header {
+    position: relative;
+}
+
+.title {
+    /*title: "WE ARE CREATIVES*/
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: "Fraunces";
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 30%;
+}
+
+.fondoHeader {
+    /*Header backbround image*/
+    width: 100%;
+    display: block;
+}
+
+/*----------------------SERVICE section--------------------------*/
+
+.featImg img {
+    /*Img container*/
+    width: 100%;
+    display: block;
+}
+
+.featImgTxt img {
+    width: 100%;
+}
+
+.featTxt {
+    /*Text container*/
+    padding: 2rem;
+    font-family: "Fraunces";
+    text-align: center;
+}
+
+.featTxt h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.featTxt p {
+    font-family: "Barlow";
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+    color: hsl(213, 9%, 39%);
+}
+
+.featTxt a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.featImgTxt {
+    /*Text & Img container*/
+    font-family: "Fraunces";
+    text-align: center;
+    position: relative;
+}
+
+.featImgTxt img {
+    display: block;
+}
+
+.featImgTxt h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    color: hsl(198, 62%, 26%);
+}
+
+.featImgTxt p {
+    font-family: "Barlow";
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    color: hsl(198, 62%, 26%);
+}
+
+/*-----------------------Testimonials-----------------------*/
+
+.testimonials {
+    /*Testimonial container*/
+    padding: 4rem 2rem;
+}
+
+.testimonials h1 {
+    font-family: "Fraunces";
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(213, 9%, 39%);
+}
+
+.tCards {
+    /*Testimonial cards*/
+    padding: 2rem 0;
+}
+
+.tCards h1 {
+    text-align: center;
+}
+
+.tCards p {
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+    color: hsl(213, 9%, 39%);
+}
+
+.tCards img {
+    width: 20%;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10rem;
+}
+
+.tCards h2 {
+    text-align: center;
+    font-family: "Fraunces";
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 1rem 0;
+}
+
+.tCards h3 {
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 0.8rem;
+    color: hsl(212, 8%, 68%);
+}
+
+/*-------------------------Picture Galery----------------------*/
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galery img {
+    width: 50%;
+}
+
+/*----------------------------Footer----------------------------*/
+
+footer {
+    background-color: hsl(167, 44%, 70%);
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    width: 200px;
+    display: block;
+    margin: 4rem auto;
+}
+
+footer h1 {
+    font-family: "Fraunces";
+    text-align: center;
+    margin: 2.5rem auto;
+    font-size: 2.5rem;
+}
+
+footer ul {
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+footer li {
+    display: inline;
+    margin: 0 2.2rem;
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 0.8rem;
+}
+
+.redes {
+    text-align: center;
+    display: flex;
+    margin: 5rem 4rem;
+    justify-content: space-evenly;
+}
+
+footer ul a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(198, 62%, 26%);
+}
+
+.redes a {
+    cursor: pointer;
+    color: hsl(198, 62%, 26%);
+}
+
+.attribution {
+    margin: 2rem auto;
+}
+
+.showhidreMenu {
+    /*Class to show/hide navbar in mobile view*/
+    visibility: visible;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 770px) {
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .featImg,
+    .featImgTxt {
+        width: 50%;
+        display: inline;
+    }
+
+    .featTxt {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wTestimonials {
+        display: flex;
+    }
+
+    .tCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wTestimonials p {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        height: 150px;
+    }
+
+    .wTestimonials img {
+        margin: 0 auto;
+    }
+
+    .galery {
+        display: flex;
+    }
+
+    .galery img {
+        width: 25%;
+    }
+
+    .egg {
+        order: 1;
+    }
+    .cup {
+        order: 4;
+    }
+    .text1 {
+        order: 2;
+    }
+    .text2 {
+        order: 3;
+    }
+
+    .textimg1 {
+        order: 5;
+    }
+    .textimg2 {
+        order: 6;
+    }
+}
